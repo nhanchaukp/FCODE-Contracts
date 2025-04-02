@@ -5,6 +5,8 @@ import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/token/ER
 import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/access/Ownable.sol";
 
 contract FCODE is ERC20, Ownable {
+    uint256 public balance;
+
     constructor(uint256 initialSupply) ERC20("FCODE", "FCODE") Ownable(msg.sender) {
         _mint(msg.sender, initialSupply * 10 ** decimals());
     }
@@ -15,5 +17,12 @@ contract FCODE is ERC20, Ownable {
     
     function burn(uint256 amount) public {
         _burn(msg.sender, amount);
+    }
+
+    function withdraw(uint amount, address payable destAddress) public {
+        require(msg.sender==owner(), "Only owner can withdraw.");
+        require(amount <= balance, "Insufficient funds.");
+        destAddress.transfer(amount);
+        balance-=amount;
     }
 }

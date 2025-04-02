@@ -242,6 +242,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "balance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -428,6 +441,24 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address payable",
+						"name": "destAddress",
+						"type": "address"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -567,11 +598,11 @@
 	},
 	"sources": {
 		"contracts/FCODE.sol": {
-			"keccak256": "0x454c1668b61b2f2def33ffe7c8e223819ee37d016fe6c420f9ae967f8e88c1a8",
+			"keccak256": "0x9be38bf569d62a10c6fd1f3d5d2d0958492eab9bc3c2ec53ccb513972d1994af",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c3c772833f4344090563e4f83102b3e3e6bae5233c29482b35f41ca8cc65f945",
-				"dweb:/ipfs/QmQAjcqSrtUbooLWNJiFaBqG1M2ZqxALLPK59Bma7RmMZQ"
+				"bzz-raw://6d8df687d0dab30ab915f4b51338149ea5606b6b8454a710ccf859fb063085a8",
+				"dweb:/ipfs/QmbKPMUteinGQge9byEMqWk2prvLmMFDhdhnQ7PjXvCDsJ"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/access/Ownable.sol": {
