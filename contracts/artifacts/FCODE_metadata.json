@@ -646,11 +646,11 @@
 			]
 		},
 		"contracts/FCODE.sol": {
-			"keccak256": "0x84429f420520927badc253e7817ffa72f905016c5b56ca2e41dd70b9b1917d0f",
+			"keccak256": "0xedf6f7c7322d93686bb4532d440c69f1e7127a8dbcfb004e9c22b33e44f6f5af",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://eed7aec73d93a4c6663b858b6f3e1baf0d486c901c2a5f9cd6e09967fe686c29",
-				"dweb:/ipfs/QmSrgBuKEt8SNiB1CJ68XxyrPs7enpTBgcykCH9dvi4neE"
+				"bzz-raw://9883b581609bba92c5f6b8be3a1efdac9787be8bf5a0a82dd3cf91fd03852b71",
+				"dweb:/ipfs/QmYXHs4LTtS8y1hSf43hsugF8WfyKi2aGDBEnssCN6EJNT"
 			]
 		}
 	},
